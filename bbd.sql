@@ -4,7 +4,8 @@ nom VARCHAR(64),
 prenom VARCHAR(64), 
 mdp VARCHAR(64),
 dateInscription DATE,
-PRIMARY KEY(idUtilisateur));
+PRIMARY KEY(idUtilisateur),
+FOREIGN KEY );
 
 CREATE TABLE Tacos
 (idTacos INT(11), 
@@ -35,35 +36,40 @@ CREATE TABLE Panier
 (idPanier INT(11),
 PRIMARY KEY (idPanier));
 
-ALTER TABLE Utilisateur_Panier 
-ADD CONSTRAINTS Utilisateur_Panier_idPanier
+ALTER TABLE Utilisateur 
+ADD CONSTRAINT Utilisateur_idPanier
 FOREIGN KEY (idPanier)
 REFERENCES Panier(idPanier);
 
-ALTER TABLE Utilisateur_Commande
-ADD CONSTRAINTS Utilisateur_Commande_idCommande
+ALTER TABLE Utilisateur
+ADD CONSTRAINT Utilisateur_idCommande
 FOREIGN KEY (idCommande)
 REFERENCES Commande(idCommande);
 
-ALTER TABLE Commande_Boisson
-ADD CONSTRAINTS Commande_Boisson_idBoisson
+ALTER TABLE Commande
+ADD CONSTRAINT Commande_idBoisson
 FOREIGN KEY (idBoisson)
 REFERENCES Boisson(idBoisson);
 
-ALTER TABLE Commande_Tacos
-ADD CONSTRAINTS Commande_Tacos_idTacos
+ALTER TABLE Commande
+ADD CONSTRAINT Commande_idTacos
 FOREIGN KEY (idTacos)
 REFERENCES Tacos(idTacos);
 
-ALTER TABLE Tacos_Sauce
-ADD CONSTRAINTS Tacos_Sauce_idSauce
+ALTER TABLE Tacos
+ADD CONSTRAINT Tacos_idSauce
 FOREIGN KEY (idSauce)
 REFERENCES Sauce(idSauce);
 
-ALTER TABLE Tacos_Viande
-ADD CONSTRAINTS Tacos_Viande_idViande
+ALTER TABLE Tacos
+ADD CONSTRAINT Tacos_idViande
 FOREIGN KEY (idViande)
 REFERENCES Viande(idViande);
+
+ALTER TABLE Panier
+ADD CONSTRAINT Panier_idCommande
+FOREIGN KEY (idCommande)
+REFERENCES Commande(idCommande);
 
 
 
