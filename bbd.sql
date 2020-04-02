@@ -1,16 +1,21 @@
 CREATE TABLE Utilisateur 
-(idUtilisateur INT(11), 
-nom VARCHAR(64), 
-prenom VARCHAR(64), 
-mdp VARCHAR(64),
-dateInscription DATE,
-PRIMARY KEY(idUtilisateur),
-FOREIGN KEY );
+(
+	idUtilisateur INT(11), 
+	nom VARCHAR(64), 
+	prenom VARCHAR(64), 
+	mdp VARCHAR(64),
+	dateInscription DATE,
+	idPanier  INT(11),
+	idCommande INT(11),
+	PRIMARY KEY(idUtilisateur)
+);
 
 CREATE TABLE Tacos
 (idTacos INT(11), 
 taille VARCHAR(64), 
 nomTacos VARCHAR(64),
+idSauce INT(11),
+idViande INT(11), 
 PRIMARY KEY (idTacos)); 
 
 CREATE TABLE Sauce 
@@ -29,11 +34,14 @@ nomBoisson VARCHAR(64),
 PRIMARY KEY (idBoisson)); 
 
 CREATE TABLE Commande 
-(idCommande INT(11), 
+(idCommande INT(11),
+ idBoisson INT(11), 
+ idTacos INT(11), 
 PRIMARY KEY(idCommande));
 
 CREATE TABLE Panier 
 (idPanier INT(11),
+idCommande INT(11),
 PRIMARY KEY (idPanier));
 
 ALTER TABLE Utilisateur 

@@ -1,0 +1,85 @@
+.block-header
+{
+    padding: 10px;
+    background: #0c1621;
+    box-shadow: 0px 1px 4px #192d43;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+}
+.block-header p
+{
+    font-size: 23px;
+    margin-left: 10px;
+    margin-right: 60px;
+    height: 25px;
+    font-family: Aller;
+    color: white;
+}
+.block-header a
+{
+    color: white;
+    text-decoration: blink;
+    font-family: Aller;
+    font-size: 23px;
+    height: 25px;
+    margin-right: 20px;
+}
+.block-navigation
+{
+   display: flex;
+   align-items: center;
+   width: 900px;
+   justify-content: space-between;
+}
+img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+.block-image_navigation
+{
+    height: 50px;
+}
+body
+{
+    background-color: #141D26;
+    margin: 0px;
+}
+.block-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@font-face
+{
+    font-family: Aller;
+    src: url(Police/Aller_Rg.ttf);
+}
+.block-ban
+{
+    text-align: center;
+}
+.block-ban p
+{
+    color: red;
+}
+.block-footer
+{
+    display: flex;
+    justify-content: center;
+    background-color: #0c1621;
+    align-items: center;
+    height: 75px;
+    font-family: Aller;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+}
+html,body
+{
+    height: 100%
+}
