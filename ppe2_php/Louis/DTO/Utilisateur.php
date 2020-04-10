@@ -18,8 +18,10 @@ class Utilisateur {
     private static $prenom;
     private static $mdp;
     private static $dateInscription;
+    private static $email;
     private static $idPanier;
     private static $idCommande;
+    
     
     public static function getIdUtilisateur() {
         return self::$idUtilisateur;
@@ -75,6 +77,14 @@ class Utilisateur {
 
     public static function setIdCommande($idCommande) {
         self::$idCommande = $idCommande;
+    }
+
+    public static function getEmail() {
+        return self::$email;
+    }
+
+    public static function setEmail($email) {
+        self::$email = $email;
     }
 
 
