@@ -24,6 +24,7 @@ class ViandeManager {
         $resultasMessage=$resultas[0];
         $Viande->setIdViande($idViande);
         $Viande->setNomViance($resultasMessage["nomViande"]);
+        $Viande->setIdTacos($resultasMessage["idTacos"]);
         return $Viande;   
     }
     public static function findAllViande()
@@ -40,4 +41,13 @@ class ViandeManager {
         }
         return $listViande;
     }
+     public static function insertViande($nomViande,$idTacos)
+    {
+        $connex= DatabaseLinkers::getconnexion();
+        $state=$connex->prepare("INSERT INTO Viande(nomViande,idTacos)
+VALUES(?,?)");
+         $state->bindParam(1,$nomViande);
+         $state->bindParam(2,$idTacos);
+         $state->execute();
+    }   
 }

@@ -13,38 +13,46 @@
  */
 class Commande {
     private static $idCommande;
-    private static $idBoisson;
     private static $idTacos;
-    private static $idUtilisateur;
-    
-    public static function getIdUtilisateur() {
-        return self::$idUtilisateur;
+    private static $nom;
+    private static $prenom;
+    private static $adresse;
+   
+    static function getNom() {
+        return self::$nom;
     }
 
-    public static function setIdUtilisateur($idUtilisateur) {
-        self::$idUtilisateur = $idUtilisateur;
+    static function getPrenom() {
+        return self::$prenom;
+    }
+
+    static function getAdresse() {
+        return self::$adresse;
+    }
+
+    static function setNom($nom) {
+        self::$nom = $nom;
+    }
+
+    static function setPrenom($prenom) {
+        self::$prenom = $prenom;
+    }
+
+    static function setAdresse($adresse) {
+        self::$adresse = $adresse;
     }
 
         public static function getIdCommande() {
         return self::$idCommande;
     }
 
-    public static function getIdBoisson() {
-        return self::$idBoisson;
-    }
-
-    public static function getIdTacos() {
+   public static function getIdTacos() {
         return self::$idTacos;
     }
 
     public static function setIdCommande($idCommande) {
         self::$idCommande = $idCommande;
     }
-
-    public static function setIdBoisson($idBoisson) {
-        self::$idBoisson = $idBoisson;
-    }
-
     public static function setIdTacos($idTacos) {
         self::$idTacos = $idTacos;
     }

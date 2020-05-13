@@ -23,9 +23,10 @@ class CommandeManager {
         $resultas=$state->fetchAll();
         $resultasMessage=$resultas[0];
         $Commande->setIdCommande($idCommande);
-        $Commande->setIdBoisson($resultasMessage["idBoisson"]);
         $Commande->setIdTacos($resultasMessage["idTacos"]);
-        $Commande->setIdUtilisateur($resultasMessage["idUtilisateur"]);
+        $Commande->setNom($resultasMessage["nom"]);
+        $Commande->setPrenom($resultasMessage["prenom"]);
+        $Commande->setAdresse($resultasMessage["adresse"]);
         return $Commande;   
     }
     public static function findAllCommandetoUtilisateur($idUtilisateur)
@@ -43,18 +44,18 @@ class CommandeManager {
         }
         return $listCommande;
     }
-     public static function insertCommande($idCommande,$idBoisson,$idTacos,$idUtilisateur)
+     public static function insertCommande($idTacos,$nom,$prenom,$adresse)
     {
          $connex= DatabaseLinkers::getconnexion();
-        $state=$connex->prepare("INSERT INTO Sujet(idCommande,idBoisson,idTacos,idUtilisateur)
+        $state=$connex->prepare("INSERT INTO Commande(idTacos,nom,prenom,adresse)
 VALUES(?,?,?,?)");
-         $state->bindParam(1,$idCommande);
-         $state->bindParam(2,$idBoisson);
-         $state->bindParam(3,$idTacos);
-         $state->bindParam(4,$idUtilisateur);
+         $state->bindParam(1,$idTacos);
+         $state->bindParam(2,$nom);
+         $state->bindParam(3,$prenom);
+         $state->bindParam(4,$adresse);
          $state->execute();
-            
-        
+         return $connex->lastInsertId();
+         
     }
     public static function deleteCommande($idCommande)
     {

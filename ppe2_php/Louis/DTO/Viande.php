@@ -14,7 +14,16 @@
 class Viande {
     public static $idViande;
     public static $nomViance;
-    
+    public static $idTacos;
+
+    public static function getIdTacos() {
+        return self::$idTacos;
+    }
+
+    public static function setIdTacos($idTacos) {
+        self::$idTacos = $idTacos;
+    }
+
     public static function getIdViande() {
         return self::$idViande;
     }

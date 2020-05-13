@@ -1,5 +1,5 @@
 <?php
-include_once ('DAO/UtilisateurManageur.php');
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -7,27 +7,19 @@ include_once ('DAO/UtilisateurManageur.php');
  */
 
 /**
- * Description of ControllerConnexion
+ * Description of MenuController
  *
  * @author utilisateur
  */
-class ControllerConnexion {
+class MenuController {
     //put your code here
-    public function includeView()
+     public function includeView()
     {
-        include_once ('connexion.php');
+        include_once ('Menu.php');
     }
-    public function authenticate()
-    {
-        
-    }
-    public function newAccount()
-    {
-        
-    }
-
     public function redirectUser()
     {
-        
+        header('Location: index.php?page=Home');
+        exit;
     }
 }

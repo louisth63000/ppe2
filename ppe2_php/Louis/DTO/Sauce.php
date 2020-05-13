@@ -14,7 +14,15 @@
 class Sauce {
     private static $idSauce;
     private static $nomSauce;
+    private static $idTacos;
     
+    public static function getIdTacos() {
+        return self::$idTacos;
+    }
+
+    public static function setIdTacos($idTacos) {
+        self::$idTacos = $idTacos;
+    }
     public static function getIdSauce() {
         return self::$idSauce;
     }

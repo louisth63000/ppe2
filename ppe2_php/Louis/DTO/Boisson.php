@@ -14,6 +14,16 @@
 class Boisson {
     private static $idBoisson;
     private static $nomBoisson;
+    private static $idCommande;
+    
+    public static function getIdCommande() {
+        return self::$idCommande;
+    }
+
+    public static function setIdCommande($idCommande) {
+        self::$idCommande = $idCommande;
+    }
+
     
     public static function getIdBoisson() {
         return self::$idBoisson;

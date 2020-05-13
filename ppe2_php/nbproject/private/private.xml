@@ -3,15 +3,33 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DTO/Utilisateur.php</file>
-            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/index.php</file>
-            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/connexion/connexion.php</file>
-            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DTO/Tacos.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixBoisson/ChoixBoissonController.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DTO/Sauce.php</file>
-            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/connexion/ControllerConnexion.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixSauce/ChoixSauce.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DTO/Boisson.php</file>
-            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DTO/Viande.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixSauce/ChoixSauceController.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixBoisson/ChoixBoisson.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DAO/SauceManager.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Menu/MenuController.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Achat/AchatController.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/tools/DatabaseLinkers.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Achat/Achat.css</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DAO/ViandeManager.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixViande/ChoixViandeController.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixViande/ChoixViande.css</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DAO/BoissonManager.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/index.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DTO/Tacos.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Confirmation/ConfirmationController.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixViande/ChoixViande.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Menu/Menu.css</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Achat/Achat.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DTO/Commande.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DAO/TacosManager.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Confirmation/Confirmation.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Menu/Menu.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DAO/CommandeManager.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DTO/Viande.php</file>
         </group>
     </open-files>
 </project-private>

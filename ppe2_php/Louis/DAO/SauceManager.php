@@ -24,6 +24,7 @@ class SauceManager {
         $resultasMessage=$resultas[0];
         $Sauce->setIdSauce($idSauce);
         $Sauce->setNomSauce($resultasMessage["nomSauce"]);
+        $Sauce->setIdTacos($resultasMessage["nomSauce"]);
         return $Sauce;   
     }
     public static function findAllSauce()
@@ -40,4 +41,13 @@ class SauceManager {
         }
         return $listSauce;
     }
+     public static function insertSauce($nomSauce,$idTacos)
+    {
+        $connex= DatabaseLinkers::getconnexion();
+        $state=$connex->prepare("INSERT INTO Sauce(nomSauce,idTacos)
+VALUES(?,?)");
+         $state->bindParam(1,$nomSauce);
+         $state->bindParam(2,$idTacos);
+         $state->execute();
+    }   
 }

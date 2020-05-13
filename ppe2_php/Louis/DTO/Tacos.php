@@ -15,8 +15,6 @@ class Tacos {
    private static $idTacos;
    private static $taille;
    private static $nomTacos;
-   private static $idSauce;
-   private static $idViande;
    
    public static function getIdTacos() {
        return self::$idTacos;
@@ -30,14 +28,6 @@ class Tacos {
        return self::$nomTacos;
    }
 
-   public static function getIdSauce() {
-       return self::$idSauce;
-   }
-
-   static function getIdViande() {
-       return self::$idViande;
-   }
-
    public static function setIdTacos($idTacos) {
        self::$idTacos = $idTacos;
    }
@@ -49,14 +39,5 @@ class Tacos {
    public static function setNomTacos($nomTacos) {
        self::$nomTacos = $nomTacos;
    }
-
-   public static function setIdSauce($idSauce) {
-       self::$idSauce = $idSauce;
-   }
-
-   public static function setIdViande($idViande) {
-       self::$idViande = $idViande;
-   }
-
 
 }

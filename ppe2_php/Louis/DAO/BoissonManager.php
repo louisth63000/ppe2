@@ -24,6 +24,7 @@ class BoissonManager {
         $resultasMessage=$resultas[0];
         $Boisson->setIdBoisson($idBoisson);
         $Boisson->setNomBoisson($resultasMessage["nomBoisson"]);
+        $Boisson->setIdCommande($resultasMessage["idCommande"]);
         return $Boisson;   
     }
     public static function findAllBoisson()
@@ -40,4 +41,13 @@ class BoissonManager {
         }
         return $listBoisson;
     }
+    public static function insertBoisson($nomBoisson,$idCommande)
+    {
+        $connex= DatabaseLinkers::getconnexion();
+        $state=$connex->prepare("INSERT INTO Boisson(nomBoisson,idCommande)
+VALUES(?,?)");
+         $state->bindParam(1,$nomBoisson);
+         $state->bindParam(2,$idCommande);
+         $state->execute();
+    }        
 }
