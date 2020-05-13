@@ -8,13 +8,9 @@
         <h2>Bienvenue chez Empire des Tacos</h2>
     </div>
     <div class="bouton">
-            <p>
-                <a href="pagecommander.php" style="
-                    color: white;
-                    text-decoration: none;
-                ">Commander
-                </a>
-           </p>
+        <form action="pagecommander.php" method="post">
+               <button class="btn">Commander</button>
+        </form>
     </div>
 </div> 
 
