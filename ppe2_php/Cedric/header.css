@@ -1,7 +1,7 @@
 .block-header
 {
     padding: 10px;
-    background-color: #00000054;
+    background-color: #0000006b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,9 +23,9 @@
     color: white;
     text-decoration: blink;
     font-family: Aller;
-    font-size: 23px;
-    height: 25px;
-    margin-right: 20px;
+    font-size: 33px;
+    height: auto;
+    margin-right: 100px;
 }
 .block-navigation
 {
@@ -34,38 +34,14 @@
    width: 100%;
    justify-content: space-between;
 }
-img
-{
-    max-height: 100%;
-    max-width: 100%;
-}
-.block-image_navigation
-{
-    height: 50px;
-}
 body
 {
     margin: 0px;
-}
-.block-logo
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
 }
 @font-face
 {
     font-family: Aller;
     src: url(Jost-Bold.ttf);
-}
-.block-ban
-{
-    text-align: center;
-}
-.block-ban p
-{
-    color: red;
 }
 .block-footer
 {
@@ -78,8 +54,4 @@ body
     color: white;
     width: 100%;
     flex-direction: column;
-}
-html,body
-{
-    height: 100%
 }

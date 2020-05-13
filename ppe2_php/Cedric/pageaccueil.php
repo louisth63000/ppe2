@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-
+include_once ('header.php');
 ?>
 <link rel="stylesheet" type="text/css" href="pageaccueil.css" media="all">
 <div>    
