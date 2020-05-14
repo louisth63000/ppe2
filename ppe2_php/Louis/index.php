@@ -16,7 +16,7 @@
 	</head>
 	<body>
 	<?php
-
+                        include_once ('Header/header.php');
                         include_once ('tools/DatabaseLinkers.php');
 
 
@@ -82,23 +82,18 @@
                                 case "ChoixBoisson":
                                     include_once('pages/ChoixBoisson/ChoixBoissonController.php');
                                     $instanceController=new ChoixBoissonController();
-                                    if(empty($_SESSION["Sauce"]))
+                                    if(!empty($_POST["Sauce"]))
                                     {
-                                        if(!empty($_POST["Sauce"]))
-                                        {
-                                            $instanceController->verification($_SESSION["Menu"], $_POST["Sauce"]);
-                                        }else
-                                        {
-                                            header('Location: index.php?page=ChoixSauce&idS=1');
-                                            exit;
-                                        }
-
-
-                                        if(empty($_POST["listBoisson"]))
-                                        {
-                                            header('Location: index.php?page=Achat');
-                                            exit;
-                                        }
+                                        $instanceController->verification($_SESSION["Menu"], $_POST["Sauce"]);
+                                    }else
+                                    {
+                                        header('Location: index.php?page=ChoixSauce&idS=1');
+                                        exit;
+                                    }
+                                    if(empty($_POST["listBoisson"]))
+                                    {
+                                        header('Location: index.php?page=Achat');
+                                        exit;
                                     }
                                     $instanceController->includeView();
                                     break;

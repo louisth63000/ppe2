@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/Header/header.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixBoisson/ChoixBoissonController.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DTO/Sauce.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixSauce/ChoixSauce.php</file>
@@ -12,12 +13,15 @@
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DAO/SauceManager.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Menu/MenuController.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Achat/AchatController.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/Header/header.css</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/tools/DatabaseLinkers.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Achat/Achat.css</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixSauce/ChoixSauce.css</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DAO/ViandeManager.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixViande/ChoixViandeController.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixViande/ChoixViande.css</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DAO/BoissonManager.php</file>
+            <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/ChoixViande/Images/vianderouge.png</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/index.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/DTO/Tacos.php</file>
             <file>file:/C:/wamp64/www/ppe2/ppe2/ppe2_php/Louis/pages/Confirmation/ConfirmationController.php</file>

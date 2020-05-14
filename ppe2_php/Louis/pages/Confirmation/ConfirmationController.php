@@ -92,13 +92,13 @@ class ConfirmationController {
                 {
                    
                     case 1:
-                        SauceManager::insertSauce("Blanche", $idTacos);
+                        SauceManager::insertSauce("sauce wok", $idTacos);
                         break;
                     case 2:
-                        SauceManager::insertSauce("Samourai", $idTacos);
+                        SauceManager::insertSauce("Sauce chili thaï", $idTacos);
                         break;
                     case 3:
-                        SauceManager::insertSauce("Special", $idTacos);
+                        SauceManager::insertSauce("sauce blanche", $idTacos);
                         break;
                     
                 }
@@ -110,13 +110,13 @@ class ConfirmationController {
                 {
                    
                     case 1:
-                        ViandeManager::insertViande("Rouge", $idTacos);
+                        ViandeManager::insertViande("Steak", $idTacos);
                         break;
                     case 2:
-                        ViandeManager::insertViande("hachié", $idTacos);
+                        ViandeManager::insertViande("Nugget", $idTacos);
                         break;
                     case 3:
-                        ViandeManager::insertViande("Charolaise", $idTacos);
+                        ViandeManager::insertViande("Escalope de dinde", $idTacos);
                         break;
                     
                 }

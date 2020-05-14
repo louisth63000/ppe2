@@ -43,7 +43,7 @@ class AchatController {
     {
         $Menu=$_SESSION["Menu"];
         $Boisson=array();
-        $Boisson=$_SESSION["Boisson"];
+        
         $Prix=0;
         switch ($Menu)
         {
@@ -57,11 +57,15 @@ class AchatController {
                 $Prix=9;
                 break;
         }
-        for($i=0;$i<sizeof($Boisson);$i++)
+        if(!empty($_SESSION["Boisson"]))
         {
-            if($Boisson[$i] !=0)
+            $Boisson=$_SESSION["Boisson"];
+            for($i=0;$i<sizeof($Boisson);$i++)
             {
-                $Prix+=$Boisson[$i];
+                if($Boisson[$i] !=0)
+                {
+                    $Prix+=$Boisson[$i];
+                }
             }
         }
         return $Prix;
