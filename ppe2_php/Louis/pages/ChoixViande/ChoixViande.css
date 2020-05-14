@@ -121,13 +121,3 @@ form input[type="submit"]
     margin-top: 50px;
     
 }
-body 
-{
-    font-size: 17px;
-    margin: 0;
-    background: #ecdfdf;
-    background-image:url(Images/test3.jpg);
-    background-size : 100%;
-    background-color: rgba(0,0,0,2);
-    font-family: Aller;
-}

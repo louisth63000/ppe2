@@ -1,0 +1,112 @@
+.box
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.box select
+{
+    background: #1ca213;
+    color: #fff;
+    padding: 10px;
+    width: 60px;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.phrase
+{
+    text-align: center;
+    color : white;
+    font-size: 28px;
+    margin-top : 5%;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-blocks
+{
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.Boisson
+{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.BoissonChoix
+{
+    display: flex;
+    flex-direction: column;
+    color : black;    
+    width: 300px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align : center;
+    background-color: #000000a6;
+    color: white;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+.container_img
+{
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    height: 125px;
+    display: flex;
+    margin-top: 10px;
+}
+.cadre
+{
+    width: 230px;
+    overflow: hidden;
+}
+.img2
+{
+    max-width: 156px;
+    margin-top: -15px;
+}
+form input[type="submit"] 
+{
+    cursor: pointer;
+    color: #ffffff;
+    height: 65px;
+    font-size: 26px;
+    font-family: Aller;
+    color: white;
+    background-color: #000000a6;
+    width: 225px;
+    margin: auto;
+}
+.container_submit
+{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.container_Boisson
+{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    font-size: 25px;
+    color: white;
+}
+
+
+
+
